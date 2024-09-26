@@ -10,7 +10,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('http://localhost:5000/api/users/login', { email, password });
+      const { data } = await axios.post('https://swifrut-task-7-expense-tracker.onrender.com/api/users/login', { email, password });
       localStorage.setItem('authToken', data.token); // Store the token in localStorage
       navigate('/');
     } catch (error) {

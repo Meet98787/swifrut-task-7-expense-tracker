@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:5000', // Point to your backend
+  baseURL: 'https://swifrut-task-7-expense-tracker.onrender.com', // Point to your backend
 });
 
 // Add a request interceptor to attach the token
